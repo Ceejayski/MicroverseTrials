@@ -18,19 +18,28 @@
           <p id="description"> Let Know More About you </p>
           <form id= "survey-form" >
 		   
-		  <select id="dropdown" >
+		<select id="dropdown" >
 		  <option value="engineering">engineering</option>
 		  <option value="developement">developement</option>
 		  <option value="physics">physics</option>
 		  </select>
 		  
 		  <div class="form-group" multiple>
+		  <label><input type="checkbox" name="attribute" value="good"/> good</label>
+		  <label><input type="checkbox" name="attribute" value="average"/> average</label>
+		  <label><input type="checkbox" name="attribute" value="bad"/> bad</label>
+		  </div> 
+		  
+		  <div class="form-group" multiple>
 		  <label><input type="radio" name="attribute" value="good"/> good</label>
 		  <label><input type="radio" name="attribute" value="average"/> average</label>
 		  <label><input type="radio" name="attribute" value="bad"/> bad</label>
 		  </div>
+		  <textarea type="text" value="comment"></textarea>
 		  
-		    <label for="name" id="name-label">Name : </label>
+		  <button id="submit">submit</button>
+		  
+			<label for="name" id="name-label">Name : </label>
 			<input type="text" id="name" placeholder="Name" required> <br><br>
 		    <label for="email" id="email-label">Email : </label>
 			<input type="email" id="email" placeholder="email"required> <br><br>
